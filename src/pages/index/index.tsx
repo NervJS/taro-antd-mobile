@@ -68,64 +68,54 @@ export default class Index extends Component<any, IState> {
           url: '/pages/button/index'
         },
         {
-          name: 'Calendar 日历',
-          url: ''
+          name: 'Calendar 日历'
         },
         {
           name: 'Checkbox 复选框',
           url: '/pages/checkbox/index'
         },
         {
-          name: 'DatePicker 日期选择',
-          url: ''
+          name: 'DatePicker 日期选择'
         },
         {
-          name: 'DatePickerView 选择器',
-          url: ''
+          name: 'DatePickerView 选择器'
         },
         {
-          name: 'ImagePicker 图片选择器',
-          url: ''
+          name: 'ImagePicker 图片选择器'
         },
         {
           name: 'InputItem 文本输入',
           url: '/pages/input/index'
         },
         {
-          name: 'Picker 选择器',
-          url: ''
+          name: 'Picker 选择器'
         },
         {
-          name: 'PickerView 选择器',
-          url: ''
+          name: 'PickerView 选择器'
         },
         {
           name: 'Radio 单选框',
           url: '/pages/radio/index'
         },
         {
-          name: 'Range 区域选择',
-          url: ''
+          name: 'Range 区域选择'
         },
         {
           name: 'SearchBar 搜索栏',
           url: '/pages/search-bar/index'
         },
         {
-          name: 'Slider 滑动输入条',
-          url: ''
+          name: 'Slider 滑动输入条'
         },
         {
           name: 'Stepper 步进器',
           url: '/pages/stepper/index'
         },
         {
-          name: 'Switch 滑动开关',
-          url: ''
+          name: 'Switch 滑动开关'
         },
         {
-          name: 'TextareaItem 多行输入',
-          url: ''
+          name: 'TextareaItem 多行输入'
         }
       ]
     }, {
@@ -178,24 +168,21 @@ export default class Index extends Component<any, IState> {
       unfold: false,
       items: [
         {
-          name: 'ActionSheet 动作面板',
-          url: ''
+          name: 'ActionSheet 动作面板'
         },
         {
           name: 'ActivityIndicator 活动指示器',
           url: '/pages/activity-indicator/index'
         },
         {
-          name: 'Modal 对话框',
-          url: ''
+          name: 'Modal 对话框'
         },
         {
           name: 'Progress 进度条',
           url: '/pages/progress/index'
         },
         {
-          name: 'Toast 轻提示',
-          url: ''
+          name: 'Toast 轻提示'
         }
       ]
     }, {
@@ -203,12 +190,10 @@ export default class Index extends Component<any, IState> {
       unfold: false,
       items: [
         {
-          name: 'PullToRefresh 拉动刷新',
-          url: ''
+          name: 'PullToRefresh 拉动刷新'
         },
         {
-          name: 'SwipeAction 滑动操作',
-          url: ''
+          name: 'SwipeAction 滑动操作'
         }
       ]
     }, {
@@ -216,8 +201,7 @@ export default class Index extends Component<any, IState> {
       unfold: false,
       items: [
         {
-          name: 'ListView 长列表',
-          url: ''
+          name: 'ListView 长列表'
         },
         {
           name: 'Result 结果页',
@@ -254,7 +238,7 @@ export default class Index extends Component<any, IState> {
 
   navigateTo (url: string, e) {
     e.stopPropagation()
-    Taro.navigateTo({ url })
+    url && Taro.navigateTo({ url })
   }
 
   render () {
@@ -293,10 +277,12 @@ export default class Index extends Component<any, IState> {
                           >
                             <div className='am-list-line'>
                               <div className='am-list-content'>{item.name}</div>
+                              {item.url &&
                               <div
                                 className='am-list-arrow am-list-arrow-horizontal'
                                 aria-hidden='true'
-                              ></div>
+                              />
+                              }
                             </div>
                             <div className='am-list-ripple' style={{ display: 'none' }}></div>
                           </div>
