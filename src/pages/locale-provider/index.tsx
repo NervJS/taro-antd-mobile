@@ -170,12 +170,12 @@ class App extends React.Component {
 
 export default function Index () {
   return (
-    <div className='h5-body'>
+    <body>
       <div>
         <div className='demo-title'>国际化</div>
         <App />
       </div>
-    </div>
+    </body>
   )
 }
 

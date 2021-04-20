@@ -50,7 +50,7 @@ function Demo2 () {
 
 export default function Index () {
   return (
-    <div className='h5-body'>
+    <body>
       <div>
         <div className='demo-title'>默认</div>
         <Demo1 />
@@ -59,7 +59,7 @@ export default function Index () {
         <div className='demo-title'>通栏</div>
         <Demo2 />
       </div>
-    </div>
+    </body>
   )
 }
 

@@ -164,7 +164,7 @@ class TabExample6 extends React.Component {
 
 export default function Index () {
   return (
-    <div className='h5-body'>
+    <body>
       <div>
         <div className='demo-title'>基本用法</div>
         <TabExample1 />
@@ -189,7 +189,7 @@ export default function Index () {
         <div className='demo-title'>自定义</div>
         <TabExample6 />
       </div>
-    </div>
+    </body>
   )
 }
 

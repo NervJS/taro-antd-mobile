@@ -9,7 +9,7 @@ export default function Index () {
   }, [])
 
   return (
-    <div className='h5-body'>
+    <body>
       <div>
         <WhiteSpace />
         <WingBlank>
@@ -22,7 +22,7 @@ export default function Index () {
           <Button onClick={() => navigateTo('/pages/tabbar/demo-1/index')}>Tabbar 在顶部</Button>
         </WingBlank>
       </div>
-    </div>
+    </body>
   )
 }
 

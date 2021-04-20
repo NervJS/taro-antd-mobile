@@ -6,7 +6,7 @@ import './index.scss'
 interface ListItem {
   title: string
   unfold: boolean
-  items: { name: string, url: string }[]
+  items: { name: string, url?: string }[]
 }
 
 interface IState {
@@ -244,7 +244,7 @@ export default class Index extends Component<any, IState> {
   render () {
     const list = this.state.list
     return (
-      <div className='h5-body'>
+      <body>
         <div id='react-content'>
           <div data-reactroot='' className='am-demo-page'>
             <div className='am-demo-hd'>
@@ -295,7 +295,7 @@ export default class Index extends Component<any, IState> {
             </div>
           </div>
         </div>
-      </div>
+      </body>
     )
   }
 }

@@ -156,10 +156,10 @@ class TabBarExample extends React.Component {
 
 export default function Index () {
   return (
-    <div className='h5-body'>
+    <body>
       <div className='demo-title'>APP 型选项卡</div>
       <TabBarExample />
-    </div>
+    </body>
   )
 }
 

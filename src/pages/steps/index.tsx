@@ -63,12 +63,12 @@ const Demo1 = function () {
 
 export default function Index () {
   return (
-    <div className='h5-body'>
+    <body>
       <div>
         <div className='demo-title'>步骤条</div>
         <Demo1 />
       </div>
-    </div>
+    </body>
   )
 }
 

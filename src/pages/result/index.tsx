@@ -42,12 +42,12 @@ const ResultExample = () => (<div className='demo-result-example'>
 
 export default function Index () {
   return (
-    <div className='h5-body'>
+    <body>
       <div>
         <div className='demo-title'>基本</div>
         <ResultExample />
       </div>
-    </div>
+    </body>
   )
 }
 

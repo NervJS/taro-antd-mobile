@@ -30,12 +30,12 @@ const NoticeBarExample = () => (
 
 export default function Index () {
   return (
-    <div className='h5-body'>
+    <body>
       <div>
         <div className='demo-title'>通告栏</div>
         <NoticeBarExample />
       </div>
-    </div>
+    </body>
   )
 }
 

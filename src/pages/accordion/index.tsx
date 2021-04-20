@@ -56,7 +56,7 @@ class AccordionExmple2 extends React.Component {
 
 export default function Index () {
   return (
-    <div className='h5-body'>
+    <body>
       <div>
         <div className='demo-title'>基本</div>
         <AccordionExmple1 />
@@ -65,7 +65,7 @@ export default function Index () {
         <div className='demo-title'>手风琴模式</div>
         <AccordionExmple2 />
       </div>
-    </div>
+    </body>
   )
 }
 

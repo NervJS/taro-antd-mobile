@@ -208,7 +208,7 @@ class ErrorInputExample extends React.Component {
 
 export default function Index () {
   return (
-    <div className='h5-body'>
+    <body>
       <div>
         <div className='demo-title'>基本</div>
         <BasicInputExampleWrapper />
@@ -217,7 +217,7 @@ export default function Index () {
         <div className='demo-title'>错误验证</div>
         <ErrorInputExample />
       </div>
-    </div>
+    </body>
   )
 }
 
