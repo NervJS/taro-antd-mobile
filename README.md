@@ -12,7 +12,7 @@
 
 ```bash
 # 安装 CLI
-npm i @tarojs/cli@next -g
+npm i @tarojs/cli@alpha -g
 
 # 启动项目
 cd taro-antd
