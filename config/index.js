@@ -28,9 +28,6 @@ const config = {
       ignoreOrder: true
     },
     postcss: {
-      pxtransform: {
-        enable: true
-      },
       url: {
         enable: true,
         config: {
